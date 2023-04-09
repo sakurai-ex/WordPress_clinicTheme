@@ -1,0 +1,74 @@
+@use "global" as *;
+
+.fv {
+    position: relative;
+}
+.fv__image-area {
+    position: relative;
+    width: 100vw;
+}
+.fv__image-area::before {
+    display: block;
+    content: '';
+    padding-top: 54.9333333333333%;
+    @include mq(md) {
+        padding-top: 32.0425208807897%;
+    }
+}
+.fv__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fv__text-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+.fv__text {
+    font-weight: lighter;
+    text-shadow: 0px 1px 20px #ffffff, 1px 1px 20px #ffffff, 1px 0px 20px #ffffff, 1px -1px 20px #ffffff, 0px -1px 20px #ffffff, -1px -1px 20px #ffffff, -1px 0px 20px #ffffff, -1px 1px 20px #ffffff;
+    font-size: rem(32);
+    white-space: nowrap;
+    @include mq(md) {
+        font-size: rem(52);
+    }
+}
+
+.fv__lead {
+    display: flex;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+    color: #fff;
+    @include mq(md) {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        bottom: rem(-40);
+        margin: initial;
+        width: initial;
+    }
+}
+.fv__lead--first,
+.fv__lead--last {
+    width: 100%;
+    padding: rem(20) rem(10);
+    font-size: rem(26);
+    text-align: center;
+    letter-spacing: .05em;
+    white-space: nowrap;
+    font-weight: normal;
+    @include mq(md) {
+    padding: rem(20) rem(40);
+    width: initial;
+    font-size: rem(32);
+    }
+}

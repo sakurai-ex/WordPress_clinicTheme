@@ -1,0 +1,11 @@
+@use "global" as *;
+.button {
+  margin-top: rem(40);
+  text-align: center;
+}
+.button a {
+  padding: rem(20) rem(60);
+  background: #374C69;
+  font-size: rem(18);
+  color: #fff;
+}

@@ -1,0 +1,9 @@
+@use "global" as *;
+.top-disease {
+    padding: rem(40) 0;
+    background-color: #f8f9fa;
+}
+.top-disease__container {
+    display: flex;
+    flex-wrap: wrap;
+}

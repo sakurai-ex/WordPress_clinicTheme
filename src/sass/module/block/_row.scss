@@ -1,0 +1,44 @@
+@use "global" as *;
+.row {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: row;
+  }
+}
+.row--number .row{
+  flex-direction: row;
+}
+.row__number {
+  display: block;
+  padding: 0 rem(40) 0 rem(10);
+  line-height: 1;
+  font-size: rem(76);
+  font-family: $base-font-family;
+  @include mq(md) {
+  padding: 0 rem(80) 0 rem(10);
+    font-size: rem(76);
+  }
+}
+
+hr {
+  margin: rem(40) 0;
+  opacity: .25;
+}
+.row__column--auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+.row__column {
+  flex: 1 0 0%;
+}
+.row__column--50 {
+  padding: rem(10);
+  width: 100%;
+  flex: 0 0 auto;
+  @include mq(md) {
+    width: 50%;
+  }
+}

@@ -1,0 +1,38 @@
+@use "global" as *;
+.slider {
+  margin:  0;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  border-radius: rem(3);
+  @include mq(md) {
+    margin: 30px auto 0;
+    width: 80%;
+  }
+}
+.smb-section ul.slick-dots {
+  padding-left: 0;
+}
+.slick-img {
+  border-radius: rem(8);
+  overflow: hidden;
+}
+.slick-img img {
+  height: auto;
+  width: 100%;
+}
+.slick-dots li {
+  margin: 0!important;
+}
+.slick-dots li button{
+  font-size:initial;
+  color:initial;
+  background:initial;
+}
+.slick-dots li button:before{
+  content:none;
+}
+.slick-img div p{
+  padding: rem(10);
+  text-align: center;
+}

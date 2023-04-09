@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.title {
+    position: relative;  
+    margin-bottom: rem(50);
+    padding: 0 0 rem(10);
+    font-weight: lighter;
+    text-align: center;
+    font-size: rem(28);
+    @include mq(md) {
+        font-size: rem(44);
+    }
+}
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 3rem;
+    height: 3px;
+    background: -webkit-gradient(linear, left top, right top, from(#4C78B5), color-stop(50%, #4C78B5), color-stop(50%, #374C69), to(#374C69));
+    background: linear-gradient(90deg, #4C78B5 0%, #4C78B5 50%, #374C69 50%, #374C69 100%);
+}

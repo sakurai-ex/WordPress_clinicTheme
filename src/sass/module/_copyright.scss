@@ -1,0 +1,10 @@
+@use "global" as *;
+.copyright {
+    margin-top: rem(40);
+    text-align: center;
+    font-size: rem(10);
+    @include mq(md) {
+        margin-top: rem(120);
+        font-size: rem(12);
+    }
+}

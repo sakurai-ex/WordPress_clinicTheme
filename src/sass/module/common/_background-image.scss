@@ -1,0 +1,17 @@
+@use "global" as *;
+.background-image {
+    width: 100vw;
+    height: 75vw;
+    position: relative;
+    @include mq(md) {
+        height: 500px;
+    }
+}
+.background-image__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

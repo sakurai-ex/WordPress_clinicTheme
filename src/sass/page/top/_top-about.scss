@@ -1,0 +1,46 @@
+@use "global" as *;
+.top-about {
+    margin-top: rem(40);
+    padding: rem(40) 0 rem(60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    @include mq(md) {
+        padding: rem(40) 0 rem(60);
+    }
+}
+.top-about__title {
+
+}
+.top-about__text {
+    font-family: $second-font-family;
+    font-size: rem(14);
+    @include mq(md) {
+        margin-top: rem(40);
+        text-align: center;
+        font-size: rem(16);
+    }
+}
+.top-about__container {
+    display: grid;
+    gap: rem(20);
+    flex-wrap: wrap;
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+.top-about__container.column--2 {
+    @include mq(md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.top-about__container.column--3 {
+    @include mq(md) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.top-about__container.column--1 {
+    @include mq(md) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
