@@ -1,0 +1,39 @@
+@use "global" as *;
+.report-list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: rem(10);
+    border-bottom: 1px solid #ddd;
+}
+.report-list:nth-child(n + 2) {
+    margin-top: rem(20);
+}
+.report-list__head {
+    display: flex;
+    flex-direction: column;
+    @include mq(md) {
+        flex-direction: row;
+    }
+}
+.report-list__date {
+    margin-right: rem(10);
+    font-weight: bold;
+    font-size: rem(14);
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}
+.report-list__title {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: rem(14);
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}
+.report-list__text {
+    margin-top: rem(6);
+    font-size: rem(14);
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}

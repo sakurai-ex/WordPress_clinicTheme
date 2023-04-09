@@ -1,0 +1,6 @@
+@use "global" as *;
+.top-news__inner {
+    @include mq(md) {
+        max-width: rem(1080);
+    }
+}

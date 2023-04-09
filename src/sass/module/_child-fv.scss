@@ -1,0 +1,23 @@
+@use "global" as *;
+.child-fv {
+  position: relative;
+  width: 100%;
+  background-color: #f8f9fa !important;
+}
+.child-fv::before {
+  display: block;
+  content: '';
+  padding-top: 150px
+}
+.child-fv__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: rem(28);
+  font-weight: normal;
+  white-space: nowrap;
+  @include mq(md) {
+    font-size: rem(42);
+  }
+}

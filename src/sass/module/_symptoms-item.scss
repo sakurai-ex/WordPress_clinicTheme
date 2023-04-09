@@ -1,0 +1,14 @@
+@use "global" as *;
+.symptoms-item {
+    margin: .5%;
+    padding: rem(10) 0 rem(10) rem(40);
+    width: 48%;
+    background: url("../images/top/check.svg") left 0.75rem center/1rem no-repeat #fff;
+    color: rgba(0, 0, 0, 0.65);
+    font-family: $second-font-family;
+    font-weight: bold;
+    @include mq(md) {
+        margin: rem(2.5) rem(10);
+        width: calc((100% - rem(60)) / 3);
+    }
+}

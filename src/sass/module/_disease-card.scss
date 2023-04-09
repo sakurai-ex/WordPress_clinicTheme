@@ -1,0 +1,68 @@
+@use "global" as *;
+.disease-card {
+    margin-top: rem(10);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include mq(md) {
+        margin: rem(10);
+        flex-direction: row;
+    }
+}
+.disease-card.column--two {
+    flex-direction: column;
+}
+.column--one .disease-card__image-area {
+    position: relative;
+    width: 100%;
+    @include mq(md) {
+        min-width: 50%;
+        width: 50%;
+    }
+}
+.column--two .disease-card__image-area {
+    position: relative;
+    width: 100%;
+}
+.disease-card__image-area::before {
+    display: block;
+    content: '';
+    padding-top: 40.1234567901235%;
+}
+.disease-card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.disease-card__body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: rem(10) rem(30);
+    background-color: #fff;
+    font-family: $second-font-family;
+    font-size: rem(14);
+    width: 100%;
+    @include mq(md) {
+        padding: rem(20);
+        padding-left: rem(40);
+        font-size: rem(16);
+    }
+}
+.disease-card__body li {
+    list-style-type: square;
+    width: 50%;
+}
+.disease-card__body li::marker {
+    color: #D7DF21;
+}
+.disease-card__link {
+    text-decoration: underline;
+    color: #4C78B5;
+    font-size: rem(14);
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}

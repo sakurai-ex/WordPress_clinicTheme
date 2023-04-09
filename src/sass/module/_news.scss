@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.news {
+    position: relative;
+    padding-bottom: rem(20);
+    border-bottom: 1px solid #ddd;
+}
+.news:nth-child(n + 2) {
+    margin-top: rem(20);
+}
+.news__head {
+    display: flex;
+    flex-direction: column;
+    @include mq(md) {
+        flex-direction: row;
+    }
+}
+.news__date {
+    padding-right: rem(10);
+    color: #4C78B5;
+    font-weight: bold;
+    font-size: rem(14);
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}
+.news__title {
+    font-size: rem(14);
+    @include mq(md) {
+font-size: rem(16);
+    }
+}
+.news__text--red{
+    color: red;
+}
+.news__body {
+    padding-top: rem(10);
+    font-size: rem(14);
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}
+.news__body a {
+    color: #4C78B5;
+    text-decoration: underline;
+}

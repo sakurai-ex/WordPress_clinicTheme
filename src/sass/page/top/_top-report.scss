@@ -1,0 +1,10 @@
+@use "global" as *;
+.top-report__lists {
+    position: relative;
+    max-height: rem(560);
+    overflow-y: scroll;
+    @include mq(md) {
+        max-height: initial;
+        overflow-y: initial;
+    }
+}

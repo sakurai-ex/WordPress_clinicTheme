@@ -1,0 +1,7 @@
+@use "global" as *;
+
+div.child-page__inner {
+  @include mq(md) {
+    max-width: rem(880);
+  }
+}

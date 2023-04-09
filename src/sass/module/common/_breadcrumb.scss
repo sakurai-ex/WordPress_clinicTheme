@@ -1,0 +1,26 @@
+@use "global" as *;
+.breadcrumb {
+  margin-top: rem(80);
+  padding-bottom: rem(20);
+}
+.breadcrumb__content {
+  display: flex;
+}
+.breadcrumb__content li {
+  position: relative;
+  padding-right: rem(20);
+  font-size: rem(14);
+}
+.breadcrumb__content li:not(:last-of-type)::before {
+  position: absolute;
+  content: '/';
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+}
+.breadcrumb__content a {
+  color: #4C78B5;
+  text-decoration: underline;
+}
+
+

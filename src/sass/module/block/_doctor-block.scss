@@ -1,0 +1,61 @@
+@use "global" as *;
+.dotor-block__single {
+  margin-top: rem(30);
+}
+.doctor-block__title {
+  padding: rem(10) rem(20);
+  font-size: rem(22);
+  color: #fff;
+  border-left: 5px solid #4C78B5;
+}
+.doctor-block p {
+  padding: rem(10) 0 0;
+  font-size: rem(18);
+}
+.doctor-block__block {
+  margin-top: rem(20);
+}
+
+.doctor-block__item-title {
+  font-weight: bold;
+  font-size: rem(20);
+  padding-bottom: rem(6);
+  border-bottom: 1px solid #ccc;
+}
+.smb-section ul.doctor-block__items {
+  margin-top: rem(15);
+  padding-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.smb-section ul li.doctor-block__item {
+  padding: rem(10);
+  margin: 0;
+  list-style: none;
+}
+.doctor-block__item:nth-child(odd) {
+  background-color: #ecedee;
+}
+.doctor-block__item:nth-child(even) {
+  background-color: #f8f9fa;
+}
+.doctor-block__other {
+  margin-top: rem(10);
+}
+.doctor-block__other-title {
+  font-size: rem(20);
+  color: #000;
+}
+.doctor-block__other-lists {
+  margin-top: rem(10);
+  padding-left: rem(20);
+}
+.doctor-block__other-list:nth-child(n + 2) {
+  margin-top: rem(8);
+}
+.doctor-block__other-list {
+  list-style: square;
+}
+.doctor-block__other-list::marker {
+  color: #4C78B5;
+}

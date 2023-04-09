@@ -1,0 +1,42 @@
+@use "global" as *;
+.reason-card {
+    margin-top: rem(20);
+    padding: 0 rem(10);
+    width: 100%;
+    font-family: $second-font-family;
+    @include mq(md) {
+        width: 33.33333%;
+    }
+}
+.reason-card__image-area {
+    position: relative;
+    width: 100%;
+}
+.reason-card__image-area::before {
+    display: block;
+    content: '';
+    padding-top: 50.4807692307692%;
+}
+.reason-card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.resson-card__title {
+    margin-top: rem(10);
+    color: #212529;
+    font-size: rem(16);
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+.reason-card__text {
+    margin-top: rem(10);
+    font-size: rem(14);
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}

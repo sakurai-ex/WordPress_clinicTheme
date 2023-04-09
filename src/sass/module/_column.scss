@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.column--one {
+    width: 100%;
+}
+.column--two {
+    @include mq(md) {
+        width: calc((100% - rem(40)) / 2);
+    }
+}
+.column--three {
+    @include mq(md) {
+        width: 33%;
+    }
+}

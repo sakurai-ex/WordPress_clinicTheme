@@ -1,0 +1,25 @@
+@use "global" as *;
+.top-symptoms {
+    padding: rem(60) 0;
+}
+.top-symptoms__title {
+    font-size: rem(26);
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    @include mq(md) {
+        font-size: rem(44);
+    }
+}
+.top-symptoms__text {
+    margin-top: rem(10);
+    color: #fff;
+    text-align: center;
+    font-family: $second-font-family;
+    font-weight: bold;
+}
+.top-symptoms__lists {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: rem(40);
+}

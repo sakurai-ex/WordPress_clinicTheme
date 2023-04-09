@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.contact-button {
+    display: none;
+    @include mq(md) {
+        text-align: center;
+        display: inline-block;
+        color: #fff;
+        background: #374C69;
+        border-radius: 0rem;
+        text-decoration: none;
+        padding: rem(20) rem(50);
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+}

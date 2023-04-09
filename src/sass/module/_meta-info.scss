@@ -1,0 +1,120 @@
+@use "global" as *;
+.meta-info {
+    display: flex;
+    flex-direction: column;
+    @include mq(md) {
+        flex-direction: row;
+    }
+}
+.meta-info__column {
+    @include mq(md) {
+        width: 50%;
+    }
+}
+.meta-info__title {
+    display: inline-block;
+    color: #fff;
+    padding: rem(8);
+    white-space: nowrap;
+    font-size: rem(12);
+}
+.meta-info__title span {
+    padding: rem(5);
+    display: inline-block;
+    width: rem(100);
+}
+.meta-info__text {
+    vertical-align: baseline;
+    padding: rem(10);
+    font-size: rem(14);
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}
+
+.meta-info__column--google-map {
+    position: relative;
+    padding: 0;
+    margin-top: rem(20);
+    @include mq(md) {
+        margin: 0;
+        margin-left: rem(20);
+    }
+}
+.meta-info__column--google-map::before {
+    display: block;
+    content: '';
+    padding-top: 103.3018867924528%;
+}
+.meta-info__column--google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-height: 350px;
+}
+.meta-info__block {
+    background-color: #fff;
+
+}
+.meta-info__block--schedule {
+    margin-top: rem(10);
+    background-color: #fff;
+}
+.meta-info__block--schedule {
+    width: 100%;
+    border-color: #dee2e6;
+    border-collapse: collapse;
+}
+.meta-info__caption {
+    padding: rem(10);
+    caption-side:bottom;
+    background-color: #fff;
+}
+.meta-info__caption span {
+    padding: rem(5);
+    color: #fff;
+    font-size: rem(12);
+}
+
+.meta-info__schedule {
+    width: 100%;
+}
+.meta-info__schedule tr {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+}
+.meta-info__schedule th{
+    padding: rem(10) rem(5);
+    font-size: rem(14);
+    @include mq(md) {
+        padding: rem(10);
+        font-size: rem(16);
+    }
+}
+.meta-info__schedule td{
+    position: relative;
+    padding: rem(10) rem(5);
+    white-space: nowrap;
+    font-size: rem(14);
+    @include mq(md) {
+        padding: rem(10);
+        font-size: rem(16);
+    }
+}
+.meta-info__schedule td {
+    text-align: center;
+}
+.meta-info__schedule td.active::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: rem(14);
+    height: rem(14);
+    background-color: #374C69;
+    border-radius: 50%;
+}

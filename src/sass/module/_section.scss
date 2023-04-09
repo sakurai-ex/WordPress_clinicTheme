@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.section {
+  padding: rem(60) 0;
+  @include mq(md) {
+  }
+}
